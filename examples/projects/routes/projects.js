@@ -10,8 +10,8 @@ module.exports = express
   .get('/', function (req, res) {
     // Get the repository information from my GitHub account
     graphqlAuth(`{
-      user(login: "ju5tu5") {
-        repositories(first: 100, orderBy: {field: UPDATED_AT, direction: DESC}, privacy: PUBLIC, isFork: false) {
+      user(login: "kiara1404") {
+        repositories(first: 9, orderBy: {field: UPDATED_AT, direction: DESC}, privacy: PUBLIC, isFork: false) {
           edges {
             node {
               name
